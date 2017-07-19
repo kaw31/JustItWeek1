@@ -1,0 +1,144 @@
+
+
+/* All images and video set to 100% width of their parent container */
+img, video {
+    width: 100%;
+}
+
+body {
+    
+    font-family: 'Ek Mukta', sans-serif;
+    font-size: 16px;
+    color: #444;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*==========================
+        HEADING SECTION
+==============================*/
+
+.logoC {
+    position: fixed;
+    margin-left: 5%;
+    width: 100px;
+    top: 0;
+    z-index: 2;
+}
+
+.navC {
+    color: white;
+    height: auto;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+}
+
+nav li a, nav li {
+    color: navy;    
+    opacity: 1;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    float: none;
+    display: block;
+    outline-style: none !important;
+    text-decoration: none;
+    border-top: 1px solid navy;
+    line-height: 2em;
+    }
+    
+ul {
+    font-size: .8em;
+}
+    
+    /*&#9776; this is the code for 3 bar menu*/
+    .navBtn  {
+        font-size: 2.5em;
+        display: block;
+        width: 20%;
+        margin: 0 4vw 0 73vw; 
+        padding: 7px 3%;
+        text-align: center;
+        cursor: pointer;
+        background-color: white;
+        color: blue;
+    }
+
+.bgImage {
+    z-index: -5;
+}
+
+.search {
+    z-index: 1;
+    text-align: center;
+    top: 3vh;
+    left: 30%;
+    width: 40%; 
+}
+
+.searchTxt {
+    display: none;
+}
+
+.menu-items {
+    text-align: right;
+}
+
+/*==========================
+        NAV SECTION
+==============================*/
+
+
+.tagline {
+    background-color: navy;
+    color: white;
+    opacity: 0.7;
+    padding: 20px 30px;
+    position: absolute;
+    top: 35vh;
+    left: 25vw;
+}
+
+
+/*==========================
+        ARTICLE SECTION
+==============================*/
+
+h2 {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1em;
+}
+
+h5 {
+    color: dodgerblue;
+    font-size: .8em;
+    text-align: center;
+}
+
+.welcome {
+    background-color: turquoise;
+    padding: 5px;
+}
+
+/*==========================
+        SITEMAP SECTION
+==============================*/
+
+.sitemap {
+    background-color: dimgrey;
+}
+
+/*==========================
+        FOOTER SECTION
+==============================*/
+
+.footer {
+    background-color: dimgrey;
+}
