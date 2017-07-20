@@ -89,7 +89,7 @@ nav li a, nav li {
     color: rgba(13, 59, 82, 1);    
     opacity: 1;
     width: 100%;
-    margin: 0%;
+/*    margin: 0%;*/
     padding: 0%;
     float: none;
     display: block;
@@ -98,6 +98,8 @@ nav li a, nav li {
     line-height: 2em;
     font-weight: 700;
     }
+
+
 
 nav li:nth-child(n+2){
     border-top: 1px solid rgba(61, 154, 231, 1);
@@ -125,14 +127,19 @@ ul {
 .search {
     z-index: 1;
     text-align: center;
-    top: 3vh;
+    top: 2%;
     left: 35%;
     width: 40%; 
     display: inline-block;
 }
 
-.fa fa-search {
-    font-size: 10px;
+.searchTerm {
+    width: 100px;
+    height: 12px; 
+}
+
+.searchButton {
+    height: 20px; 
 }
 
 .searchTxt, .menu-items {
@@ -180,6 +187,10 @@ h5 {
     
 }
 
+.mainArt {
+    margin-bottom: 10px;
+}
+
 .mainArt p {
     font-size: 0.8em;
 }
@@ -215,7 +226,7 @@ h5 {
 .welcome {
     background-color: rgba(184, 210, 238, 1);
     color: rgba(13, 59, 82, 1);
-    padding: 10px;
+    padding: 10px 30px 20px;
 }
 
 /*==========================

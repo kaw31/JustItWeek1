@@ -4,17 +4,56 @@
 
 
 @media screen and (min-width: 768px) {
+/*
     .mainArt, .areaC, .contactArt, .socialIcons, .sitemapCont {
         column-count: 2;
     }
+*/
     
-    .sitemapCont {
-        column-count: 3;
+    
+    .searchTerm {
+    width: 200px;
+    height: 20px;  
     }
     
-    .sitemap h1 {
-        text-align: center;
+    .searchButton {
+    height: 25px; 
+}
+    
+    /*-------- AREA SECTION ---------------*/
+    
+    .areaCol1, .areaCol2 {
+        display: inline-block;
+        padding: 5px 5%;
     }
+    
+      .areaCol1 {
+        border-right: 1px solid rgba(13, 59, 82, 1);
+    }
+    
+    
+    /*-------- ARTICLE SECTION ---------------*/
+
+    
+    
+    /*-------- CONTACT SECTION ---------------*/
+    
+    
+    /*-------- WELCOME SECTION ---------------*/
+    
+    .welcome {
+        padding: 10px 80px 50px;
+    }
+    
+    .welcome h1 {
+        text-align: left
+    }
+    
+    /*-------- SITEMAP SECTION ---------------*/
+    
+
+    
+   
     
   
     
@@ -27,4 +66,5 @@
 
 @media screen and (min-width: 1024px) {
     
+
 }
