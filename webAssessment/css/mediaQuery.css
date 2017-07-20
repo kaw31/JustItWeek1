@@ -1,0 +1,30 @@
+/*---------------------------------------------------------------------
+                 TABLET STYLES - 768 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 768px) {
+    .mainArt, .areaC, .contactArt, .socialIcons, .sitemapCont {
+        column-count: 2;
+    }
+    
+    .sitemapCont {
+        column-count: 3;
+    }
+    
+    .sitemap h1 {
+        text-align: center;
+    }
+    
+  
+    
+}
+
+
+/*---------------------------------------------------------------------
+                 DESKTOP STYLES - 1024 SCREEN RESOLUTION
+---------------------------------------------------------------------*/
+
+@media screen and (min-width: 1024px) {
+    
+}

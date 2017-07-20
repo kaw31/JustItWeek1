@@ -4,17 +4,19 @@
         <title>FDG Forensics</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- CSS RESET NORMALIZE -->
         <link href="css/normalize.css" rel="stylesheet" type="text/css">
         <!-- MY OWN CSS -->
-        <link href="css/myStyle.css" rel="stylesheet" type="text/css"> 
+        <link href="css/myStyle.css" rel="stylesheet" type="text/css">
+        <link href="css/mediaQuery.css" rel="stylesheet" type="text/css"> 
     </head>
     
     <body>
         
  <!-- HOME SECTION ================================================== -->
         
-        <section>
+        <section class="homeBg">
         
            <div class="logoC">
                     <a href="#home"><img src="img/fdgLogo.png" alt="FDG Forensics Logo" /></a>
@@ -25,27 +27,19 @@
                     <span class="searchTxt">Site:<br>People:</span>
                         
                     <div class="search navC">
-                        <input type="text" class="searchTerm" placeholder="Search">
+                        <input type="text" class="searchTerm" placeholder="Search" style="width: 80px; height: 15px" />
                         <button type="submit" class="searchButton">
                         <i class="fa fa-search" aria-hidden="true"></i>
                     </button>
                     </div>
                 </div>
-        </section>
-        
-        
- <!-- NAV SECTION ================================================== -->
-    <section>
-        <div class="bgImage">
-            <img src="img/arch.jpg" alt="Background Image" />
-        </div>
         
         <div class="navC">
                 <span class="navBtn">&#9776;</span>
                      <nav>
                         <ul id="mainMenu" class="menu-items">
                             <li><a href="#home">ABOUT US</a></li>
-                            <li><a href="#products">AREA OF EXPERTISE</a></li>
+                            <li><a href="#areaOfExp">AREA OF EXPERTISE</a></li>
                             <li><a href="#sales">PEOPLE</a></li>
                             <li><a href="#about">OFFICES</a></li>
                             <li><a href="#contact">ARTICLE</a></li>
@@ -54,30 +48,39 @@
                         </ul>
                     </nav>
                 </div>
-        
+            
             <div class="tagline">
                 <span>WE ARE FORENSIC INVESTIGATORS</span>
             </div>
         
         </section>
             
-        
+        <div class="myVideo">
+                <video autoplay loop>
+                    <source src="video/Engine.mp4" type="video/mp4">
+  
+                </video>
+            </div>
         
         
  <!-- COLUMN CONTENT SECTION ================================================== -->
         
-        <section>
+        <section class="content3">
             <article>
-            <div>
+            <div id="areaOfExp">
                 <h2>AREA OF EXPERTISE</h2>
             </div>
-                <div>
+                <div class="mainC areaC">
+                    <div class="areaCol1">
                     <h5>CHEMICAL ENGINEERING INVESTIGATION</h5>
                     <h5>CONTAMINATION ASSESSMENT</h5>
                     <h5>FIRE AND EXPLOSION INVESTIGATION</h5>
+                    </div>
+                    <div class="areaCol2">
                     <h5>MARINE CARGO INVESTIGATION</h5>
                     <h5>MECHANICAL ENGINEERING</h5>
                     <h5>TRAFFIC ACCIDENT</h5>
+                    </div>
                 </div>
             </article>
             
@@ -85,11 +88,13 @@
             <div>
                 <h2>ARTICLE</h2>
             </div>
-                <div>
+                <div class="mainC mainArt">
                     <h5>NEW OFFICE IN DUBAI</h5>
-                        <p>The UK's foremosudgf djidsijf dihjfois jdhasuhusdhhnsn ihioshjfeij.</p>
+                        <p>The UK's foremost firm of forensic investigators, is broadening its global coverage by opening its first office...</p>
+                        <a>[More]</a>
                     <h5>SAFETY RECALL BRIEFING</h5>
-                     <p>The UK's foremos udgf djidsijf dihjfois jdhasuhusdhhnsn ihioshjfeij.</p>
+                        <p>We frequently investigate fires involving white goods and electrical installation equipment...</p>
+                        <a>[More]</a>
                     
                 </div>
             </article>
@@ -98,15 +103,18 @@
             <div>
                 <h2>QUICK CONTACT</h2>
             </div>
-                <div>
+                <div class="mainC contactArt">
                     <p>CALL US TODAY ON:</p>
+                    <i class="fa fa-mobile icons" aria-hidden="true"></i>
                     <a href="tel:+44(0)20 1234 567">+44(0)20 1234 567</a>
                     <p>OR EMAIL US AT::</p>
+                    <i class="fa fa-envelope icons" aria-hidden="true"></i>
                     <a href="mailto:postmaster@fdgforensics.com">POSTMASTER@FDGFORENSICS.COM</a>
-                    <p>URGENT INSTRUCTIONS SHOULD BE GIVEN BY TELEPHONE:</p>
+                    <p>URGENT INSTRUCTIONS SHOULD BE GIVEN BY TELEPHONE</p>
+                    <i class="fa fa-map-marker icons" aria-hidden="true"></i>
                     <address>
-                    LONDON OFFICE
-                    110-112 FULL MOON ROAD
+                    LONDON OFFICE<br>
+                    110-112 FULL MOON ROAD<br>
                     BARTS CLOSE
                     </address>     
                 </div>
@@ -126,12 +134,25 @@
                     Fusce lacus velit, congue ac justo sed, blandit suscipit arcu. Maecenas non metus et ex euismod scelerisque. Mauris consequat enim nisl, ut laoreet nunc vehicula non. Integer vel consequat justo, in ullamcorper odio. Etiam semper varius arcu, ut ullamcorper turpis commodo vel. Maecenas feugiat malesuada risus in scelerisque. Aliquam non est et felis scelerisque fringilla. Sed malesuada venenatis libero, quis suscipit turpis tincidunt sit amet.</p>
             </div>
             
-            <div>
+            <div class="socialM">
                 <h2>SOCIAL MEDIA</h2>
             </div>
             
-            <div>
+            <div class="socialIcons">
                 <!-- INSERT SOCIAL MEDIA ICONS HERE -->
+                <div>
+                    <img src="img/linkedin-logo.png" alt="LinkedIn Logo" />
+                </div>
+                <div>
+                    <img src="img/App-Store-Icon.png" alt="Apple App Store" />
+                </div>
+                <div>
+                <img src="img/google-play.png" alt="Google Play Logo" />
+                </div>
+                <div>
+                    <img src="img/blackberry.png" alt="Blackberry App Logo" />
+                </div>
+           
             </div>
         
         </section>
@@ -142,39 +163,49 @@
         <section class="sitemap">
         
         <h1>SITEMAP</h1>
-            
+        <div class="sitemapCont">
             <article>
                 <h6>Area of Work</h6>
-                    <p>dhfuishfdu</p>
-                    <p>dhfuishfdu</p>
-                    <p>dhfuishfdu</p>
-                    <p>dhfuishfdu</p>
-                    <p>dhfuishfdu</p>
-                    <p>dhfuishfdu</p>
+                    <ul class="areaLi">
+                        <li>Chemical Engineering Investigation</li>
+                        <li>Contamination Assessment</li>
+                        <li>Fire and Explosion</li>
+                        <li>Marine Cargo Investigation</li>
+                        <li>Mechanical Engineering and Materials Failures</li>
+                        <li>Traffic Accident Investigation</li>
+                    </ul>
             </article>
             
             <article>
                 <h6>About FDG Forensics</h6>
-                    <p>dhfuishfdu</p>
-                    <p>dhfuishfdu</p>
-                    <p>dhfuishfdu</p>
+                    <ul class="aboutLi">
+                        <li>About FDG Forensics UK</li>
+                        <li>About FDG Forensics Singapore</li>
+                        <li>About FDG Forensics Hong Kong</li>
+                    </ul>
                 <h6>People</h6>
-                    <p>dhfuishfdu</p>
-                    <p>dhfuishfdu</p>
-                    <p>dhfuishfdu</p>
+                    <ul class="peopleLi">
+                        <li>Partners</li>
+                        <li>Associates</li>
+                        <li>Consultants</li>
+                    </ul>
             </article>
             
             <article>
                 <h6>Offices</h6>
-                    <p>dhfuishfdu</p>
-                    <p>dhfuishfdu</p>
-                    <p>dhfuishfdu</p>
-                     <p>dhfuishfdu</p>
-                    <p>dhfuishfdu</p>
+                   <ul class="officesLi">
+                        <li>UK Office</li>
+                        <li>USA Office</li>
+                        <li>Singapore Office</li>
+                        <li>Hong Kong Office</li>
+                        <li>Dubai Office</li>
+                    </ul>
                 <h6>Contact Us</h6>
-                    <p>dhfuishfdu</p>
+                    <ul class="contactLi">
+                        <li>Contact Us Mailform</li>
+                    </ul>
             </article>
-        
+        </div>
         </section>
         
     
