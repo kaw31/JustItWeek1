@@ -65,7 +65,7 @@ h6 {
 ==============================*/
 
 section.homeBg {
-    height: 67px;
+    max-height: 67px;
 }
 
 .logoC {
@@ -89,7 +89,7 @@ nav li a, nav li {
     color: rgba(13, 59, 82, 1);    
     opacity: 1;
     width: 100%;
-/*    margin: 0%;*/
+    margin: 0%;
     padding: 0%;
     float: none;
     display: block;
@@ -98,8 +98,6 @@ nav li a, nav li {
     line-height: 2em;
     font-weight: 700;
     }
-
-
 
 nav li:nth-child(n+2){
     border-top: 1px solid rgba(61, 154, 231, 1);
@@ -127,19 +125,15 @@ ul {
 .search {
     z-index: 1;
     text-align: center;
-    top: 2%;
+    top: 3vh;
     left: 35%;
-    width: 40%; 
+    width: 30%; 
     display: inline-block;
+    
 }
 
-.searchTerm {
-    width: 100px;
-    height: 12px; 
-}
-
-.searchButton {
-    height: 20px; 
+.fa fa-search {
+    font-size: 10px;
 }
 
 .searchTxt, .menu-items {
@@ -154,11 +148,14 @@ ul {
     background-color: rgba(13, 59, 82, 0.8);
     color: white; 
     padding: 10px 20px;
-    z-index: 1;
-    display: inline-block;
-    margin-top: 50%;
+    z-index: -1;
+    position: absolute;
+    top: 80px;
+    right: 0;
     
 }
+
+
 
 
 /*==========================
@@ -185,10 +182,6 @@ h5 {
     padding: 10px;
     text-align: center;
     
-}
-
-.mainArt {
-    margin-bottom: 10px;
 }
 
 .mainArt p {
@@ -226,7 +219,7 @@ h5 {
 .welcome {
     background-color: rgba(184, 210, 238, 1);
     color: rgba(13, 59, 82, 1);
-    padding: 10px 30px 20px;
+    padding: 10px;
 }
 
 /*==========================
